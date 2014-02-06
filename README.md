@@ -57,7 +57,9 @@ Examples
 :)
 ===
 
-Please report bugs, suggestions here (Pull Request) and my email.
+Please report bugs, suggestions here (Pull Request) and in my email [prbr#ymail.com].
+
+----
 
 ----
 
