@@ -15,7 +15,10 @@ Commands & options:
 - http://loren.tk/help        - this help. 
 
 
-**Examples**
+Examples
+========
+
+**PHP**
 
     <?php
     $loren = file_get_contents('http://loren.tk/p/10/1');
@@ -24,7 +27,7 @@ Commands & options:
     //Generates 10 paragraphs with '<p>' tags.
  
     
-Populate table in database mysql:
+**Populate table in database mysql**
     
     <?php
     $pdo = new PDO('mysql:host=localhost;dbname=MyDbase;charset=UTF8', 'root', '******');
@@ -33,12 +36,28 @@ Populate table in database mysql:
     $sth->execute(array('loren'=>file_get_contents('http://loren.tk/w/1000')));
     
     
-Html iframe:
+**Html iframe**
 
     . . .
     <iframe src="http://loren.tk/p/4/1"></iframe>
     . . .
 
+**Jquery Ajax**
+
+*in HTML*
+
+    <div id="ajax"> --- </div>
+    
+*in Javascript*
+
+    $("#ajax").load("http://loren.tk/p/2/1");
+
+
+
+:)
+===
+
+Please report bugs, suggestions here (Pull Request) and my email.
 
 ----
 
