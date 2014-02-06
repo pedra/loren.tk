@@ -3,7 +3,7 @@
  * Loren API  
  *      by Bill Rocha [prbr@ymail.com]
  * 
- * Inspirado na excelente classe LoremIpsumGenerator 
+ * Possivel graças a excelente classe LoremIpsumGenerator 
  *      de Renato Cassino [renatocassino@gmail.com]
  *      https://github.com/Tacno/populate-mysql-db
  * 
