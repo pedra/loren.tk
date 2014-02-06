@@ -18,29 +18,9 @@ Commands & options:
 Examples
 ========
 
-**PHP**
-
-    <?php
-    $loren = file_get_contents('http://loren.tk/p/10/1');
-    
-    echo $loren;
-    //Generates 10 paragraphs with '<p>' tags.
- 
-    
-**Populate table in database mysql**
-    
-    <?php
-    $pdo = new PDO('mysql:host=localhost;dbname=MyDbase;charset=UTF8', 'root', '******');
-    $sth = $pdo->prepare('INSERT INTO table_name (column_name) VALUES (:loren)');
-    
-    $sth->execute(array('loren'=>file_get_contents('http://loren.tk/w/1000')));
-    
-    
 **Html iframe**
 
-    . . .
     <iframe src="http://loren.tk/p/4/1"></iframe>
-    . . .
 
 **Jquery Ajax**
 
@@ -52,6 +32,25 @@ Examples
 
     $("#ajax").load("http://loren.tk/p/2/1");
 
+
+**PHP**
+
+    <?php
+    $loren = file_get_contents('http://loren.tk/p/10/1');
+    
+    //Display 10 paragraphs with '<p>' tags.
+    echo $loren; 
+ 
+    
+**Populate table in database mysql**
+    
+    <?php
+    $pdo = new PDO('mysql:host=localhost;dbname=MyDbase;charset=UTF8', 'root', '******');
+    
+    $sth = $pdo->prepare('INSERT INTO table_name (column_name) VALUES (:loren)');
+    $sth->execute(array('loren'=>file_get_contents('http://loren.tk/w/1000')));
+    
+    //see PHP and PDO for more information [http://php.net/manual/en/class.pdo.php]
 
 
 :)
