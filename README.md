@@ -1,4 +1,6 @@
-loren.tk
+![alt text](https://github.com/pedra/loren.tk/raw/master/assets/loren.png "Logo")
+
+Loren.tk
 ========
 
 Simple API to generate Lorem Ipsolum Text
@@ -19,7 +21,7 @@ Examples
 ========
 
 **Html iframe**
-
+    
     <iframe src="http://loren.tk/p/4/1"></iframe>
 
 **Jquery Ajax**
