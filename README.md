@@ -28,12 +28,16 @@ Populate table in database mysql:
     
     <?php
     $pdo = new PDO('mysql:host=localhost;dbname=MyDbase;charset=UTF8', 'root', '******');
-    $sth = $pdo->prepare('INSERT INTO yourtablename (yourTextCol) VALUES (:loren)');
+    $sth = $pdo->prepare('INSERT INTO table_name (column_name) VALUES (:loren)');
     
     $sth->execute(array('loren'=>file_get_contents('http://loren.tk/w/1000')));
     
     
+Html iframe:
 
+    . . .
+    <iframe src="http://loren.tk/p/4/1"></iframe>
+    . . .
 
 
 ----
