@@ -60,7 +60,7 @@ Examples
 Please report bugs, suggestions here (Pull Request) and in my email [prbr#ymail.com].
 
 
--_*
+:$
 ===
 
 Tanks Renato Cassino [https://github.com/Tacno]
