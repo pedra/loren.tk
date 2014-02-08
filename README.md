@@ -48,3 +48,5 @@ Usage
 ==
 
 Tanks Renato Cassino [https://github.com/Tacno]
+
+This work in PHP Start framework [https://github.com/pedra/start]
