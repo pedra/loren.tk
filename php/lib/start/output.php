@@ -10,7 +10,7 @@ class Output {
     private $content = '';
     
     
-    function __construct($content = '', $log = true){
+    function __construct($content = '', $log = false){
         $this->content = $content;
         //Log in Db
         if($log) $this->logIn('', 'DB');        
