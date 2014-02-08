@@ -1,4 +1,10 @@
 <?php
+/*
+ *  TODO : DEVELOP ALL
+ *  ADMINISTRATOR AREA
+ *
+ */
+
 
 /**
  * Description of admin
