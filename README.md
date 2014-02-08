@@ -49,4 +49,4 @@ Usage
 
 Tanks Renato Cassino [https://github.com/Tacno]
 
-This work in PHP Start framework [https://github.com/pedra/start]
+This application runs on PHP Start Framework [https://github.com/pedra/start]
