@@ -54,10 +54,12 @@
             <div class="usages">
                 <h2>Examples</h2>
                 
-                <h3>HTML iframe:</h3>
+                <h3>HTML iframe </h3>
+                <a href="" id="viewiframe" title="view iframe sample!"> play </a>
                 <pre>&lt;iframe src="http://loren.tk/p/4/1">&lt;/iframe></pre>
                 
-                <h3>Jquery Ajax</h3>
+                <h3>Jquery Ajax </h3>
+                <a href="" id="viewajax" title="view AJAX sample!"> play </a>
                 <pre>in HTML
 &lt;div id="ajax"> --- &lt;/div>
 
@@ -82,6 +84,13 @@ $sth->execute(array('loren'=>file_get_contents('http://loren.tk/w/1000')));
                 
                 
             </div>
+            
+            <div id="play">
+                <h3>Play Ground</h3>
+                <div id="playcontent">...</div>
+                <button id="closeView">Close</button>
+                <button id="reloadView">Reload</button>                
+            </div>
 
             <div class="footer">
                 Given by <a href="https://github.com/Tacno">Renato Cassino</a>
@@ -89,5 +98,7 @@ $sth->execute(array('loren'=>file_get_contents('http://loren.tk/w/1000')));
                 <br />Click <a href="https://github.com/pedra/loren.tk">here</a> and help us improve this code!
             </div>
         </div>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="@URL script/main.js"></script>
     </body>
 </html>
