@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loren Ipsum API</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Simple Lorem ipsum Generator API"/>
+        <meta name="keywords" content="Lorem Ipsum, Lipsum, Lorem, Ipsum, Text, Generate, Generator, Facts, Information, What, Why, Where, Dummy Text, Typesetting, Printing, de Finibus, Bonorum et Malorum, de Finibus Bonorum et Malorum, Extremes of Good and Evil, Cicero, Latin, Garbled, Scrambled, Lorem ipsum dolor sit amet, dolor, sit amet, consectetur, adipiscing, elit, sed, eiusmod, tempor, incididunt" />
+        <meta property="og:title" content="Lorem Ipsum Generator API"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://loren.tk/"/>
+        <meta property="og:image" content="http://loren.tk/assets/loren.png"/>
+        <meta property="og:site_name" content="loren.tk"/>
+        <meta property="og:description" content="Carregue texto aleatório (LoremIpsum) diretamente em seu projeto pela API sem necessidade de copiar & colar."/>
+        <meta name="google-site-verification" content="nrL0ws4lb5l8PH3ovuXfx_r5in1BsZ24mRJWgqpSJ6A" />
+        <link type="text/css" rel="stylesheet" media="screen" href="@URL style/main.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <h1>Loren Ipsum Generator</h1>
+            </div>
+            
+            <div class="comands">
+                <h2>Commands & options:</h2>
+                <pre class="sintaxe">Usage : http://loren.tk/[COMAND]/[OPTION]/[OPTION]</pre>
+
+                <h3>Word</h3>
+                <p class="sintaxe">loren.tk/w/qtd</p>
+                <p><b>qtd</b> : quantidade de palavras.</p>
+                <p class="example">Ex.: <a href="@URL w/10">loren.tk/w/10</a></p>
+
+                <h3>Charters</h3>
+                <p class="sintaxe">loren.tk/c/min/max</p>
+                <p><b>min</b> : quantidade <b>mínima</b> de carecters nas palavras.</p>
+                <p><b>max</b> : quantidade <b>máxima</b> de carecters nas palavras.</p>
+                <p class="example">Ex.: <a href="@URL c/3/30">loren.tk/c/3/30</a></p>
+
+                <h3>Paragraphs</h3>
+                <p class="sintaxe">loren.tk/p/qtd/tag</p>
+                <p><b>qtd</b> : quantidade de parágrafos.</p>
+                <p><b>tag</b> : se presente, usa a tag &lt;p/&gt; entre os parágrafos (1/0).</p>
+                <p class="example">Ex.: <a href="@URL p/3">loren.tk/p/3</a></p>
+                <p class="example">Ex.: <a href="@URL p/3/1">loren.tk/p/3/1</a></p>
+
+                <h3>Randomic</h3>
+                <p class="sintaxe">loren.tk/r/qtd</p>
+                <p><b>qtd</b> : quantidade de caracteres.</p>
+                <p>Gera uma palavra com caracteres aleatórios.</p>
+                <p class="example">Ex.: <a href="@URL r">loren.tk/r</a></p>
+                <p class="example">Ex.: <a href="@URL r/8">loren.tk/r/8</a></p>
+            </div>
+            
+            <div class="usages">
+                <h2>Examples</h2>
+                
+                <h3>HTML iframe </h3>
+                <a href="" id="viewiframe" title="view iframe sample!"> play </a>
+                <pre>&lt;iframe src="http://loren.tk/p/4/1">&lt;/iframe></pre>
+                
+                <h3>Jquery Ajax </h3>
+                <a href="" id="viewajax" title="view AJAX sample!"> play </a>
+                <pre>in HTML
+&lt;div id="ajax"> --- &lt;/div>
+
+in Javascript
+$("#ajax").load("http://loren.tk/p/2/1");</pre>
+                
+                <h3>PHP Codes</h3>
+                <pre>&lt;?php
+$loren = file_get_contents('http://loren.tk/p/10/1');
+
+//Display 10 paragraphs with '&lt;p>' tags.
+echo $loren;</pre>
+                
+                <h3>Populate table in database mysql</h3>
+                <pre>&lt;?php
+$pdo = new PDO('mysql:host=localhost;dbname=MyDbase;charset=UTF8', 'root', '****');
+
+$sth = $pdo->prepare('INSERT INTO table_name (column_name) VALUES (:loren)');
+$sth->execute(array('loren'=>file_get_contents('http://loren.tk/w/1000')));
+
+//see PHP and PDO for more information [http://php.net/manual/en/class.pdo.php]</pre>
+                
+                
+            </div>
+            
+            <div id="play">
+                <h3>Play Ground</h3>
+                <div id="playcontent">...</div>
+                <button id="closeView">Close</button>
+                <button id="reloadView">Reload</button>                
+            </div>
+
+            <div class="footer">
+                Given by <a href="https://github.com/Tacno">Renato Cassino</a>
+                and <a href="https://google.com/+BillRocha?rel=author">Bill Rocha</a>
+                <br />Click <a href="https://github.com/pedra/loren.tk">here</a> and help us improve this code!
+            </div>
+        </div>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="@URL script/main.js"></script>
+    </body>
+</html>

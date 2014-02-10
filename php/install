@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php 
+//get default Browser
+exec('explorer http://localhost');
+
+//start server
+exec('cd '.dirname(__DIR__).' & php -S localhost:80');
