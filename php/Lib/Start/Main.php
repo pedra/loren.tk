@@ -17,17 +17,17 @@ defined('REQST')    || define('REQST', trim(str_replace($base, '', $_SERVER['REQ
 defined('URL')      || define('URL', 'http://'.$_SERVER['SERVER_NAME'].$base.'/');
 
 //Configurations
-class_alias('Lib\Start\Config', 'o'); 
+class_alias('Start\Config', 'o'); 
 o::load(PPHP.'app.ini'); //load config ini file
 
 //Template alias
-class_alias('Lib\Start\Html\Doc', 'View');
+class_alias('Start\Html\Doc', 'View');
 
 //Decode route and instantiate controller
-$controller = new Lib\Start\Controller(REQST, o::app('controller'));
+$controller = new Start\Controller(REQST, o::app('controller'));
 $controller->setP404(false); //Page error404 enabled
 $content = ($controller->solve() == false) ? (new View('404'))->render() : $controller->run();
 
 //Template Engine
-$out = new Lib\Start\Output($content);
+$out = new Start\Output($content);
 $out->send();//produce and display HTML

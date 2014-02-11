@@ -1,7 +1,8 @@
 <?php
 //starting the autoloader classes (Autoloader)
-set_include_path('.' . PATH_SEPARATOR . str_replace('phar:', 'phar|', PPHP)
-        . trim(get_include_path(), ' .'));
+set_include_path('.' . PATH_SEPARATOR . str_replace('phar:', 'phar|', PPHP)        
+         . PATH_SEPARATOR . str_replace('phar:', 'phar|', LIB)
+         . trim(get_include_path(), ' .'));
 
 //setting the automatic loading - Autoloader
 spl_autoload_register(

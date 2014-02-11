@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace Lib\Start\Db;
+namespace Start\Db;
 
 /**
  * Description of result

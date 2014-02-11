@@ -14,7 +14,7 @@ use View;
  * version 0.1 [ 2014.02.06.16.48.beta ]!
  * 
  */
-use Lib\Start\Text\LoremIpsumGenerator as Lorem;
+use Start\Text\LoremIpsumGenerator as Lorem;
 
 class Main {
 

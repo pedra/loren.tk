@@ -1,11 +1,11 @@
 <?php
 
-namespace Lib\Start;
+namespace Start;
 
 /* CONFIG ROOT STATIC CLASS
  * 
  * Use:
-  1 - class_alias('Lib\Start\Config', 'o'); - basic usage
+  1 - class_alias('Start\Config', 'o'); - basic usage
   2 - o::load('file.ini'); >> load ini file
 
   //by __callStatic emulate section named function

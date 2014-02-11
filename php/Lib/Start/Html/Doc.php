@@ -10,7 +10,7 @@
  * @since		0.0.1
  */
 
-namespace Lib\Start\Html;
+namespace Start\Html;
 use o;
 
 class Doc

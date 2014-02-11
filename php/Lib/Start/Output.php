@@ -1,7 +1,7 @@
 <?php
 
-namespace Lib\Start;
-use Lib\Start\Db\Conn as DB;
+namespace Start;
+use Start\Db\Conn as DB;
 use o;
 
 class Output {

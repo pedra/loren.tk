@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib\Start\Db;
+namespace Start\Db;
 
 use o;
 use PDO;
@@ -62,7 +62,7 @@ class Conn {
         $sth = $this->db()->prepare($sql);
         $sth->execute($parms);
 
-        return $this->result = $sth->fetchAll(PDO::FETCH_CLASS,"Lib\Start\Db\Result");
+        return $this->result = $sth->fetchAll(PDO::FETCH_CLASS,"Start\Db\Result");
     }
 
     /**

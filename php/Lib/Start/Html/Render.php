@@ -10,7 +10,7 @@
  * @since		0.0.1
  */
 
-namespace Lib\Start\HTML;
+namespace Start\HTML;
 
 class Render {
     

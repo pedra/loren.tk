@@ -8,7 +8,7 @@
  * 
  */
 
-namespace Lib\Start\Text;
+namespace Start\Text;
 
 class LoremIpsumGenerator {
 

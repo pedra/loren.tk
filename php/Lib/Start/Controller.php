@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib\Start;
+namespace Start;
 
 class Controller {
     
