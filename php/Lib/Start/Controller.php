@@ -53,11 +53,12 @@ class Controller {
     
         //finding Controller -----------------------------------------
         if(isset($url[0]) && $url[0] != '' && file_exists($this->path . ucfirst($url[0]) . '.php')){
-            $this->controller = 'Controller\\'.ucfirst($url[0]);
+            $this->controller = ucfirst($url[0]);
             array_shift ($url);          
         }
 
         //new controller
+        include PPHP.'Controller/'.$this->controller.'.php';
         $this->controller = new $this->controller(); 
     
         //finding a action -----------------------------------------
