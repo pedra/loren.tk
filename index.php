@@ -1,2 +1,2 @@
 <?php
-include 'php/Lib/Start/Main.php';
+include 'php/vendor/start/Main.php';

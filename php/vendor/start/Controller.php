@@ -58,7 +58,7 @@ class Controller {
         }
 
         //new controller
-        include PPHP.'Controller/' . $this->controller.'.php';
+        include $this->path . $this->controller.'.php';
         $this->controller = new $this->controller(); 
     
         //finding a action -----------------------------------------

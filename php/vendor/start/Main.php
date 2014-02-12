@@ -1,11 +1,11 @@
 <?php
 //Defines for CORE
 defined('PPHP')     || define('PPHP', dirname(dirname(__DIR__)) . '/'); 
-defined('LIB')      || define('LIB', PPHP . 'Lib/');
+defined('VENDOR')   || define('VENDOR', PPHP . 'vendor/');
 
 //Auxiliar Functions
-include LIB.'Start/Autoload.php';
-include LIB.'Start/Utils.php';
+include VENDOR.'start/Autoload.php';
+include VENDOR.'start/Utils.php';
 
 //Defines for template
 defined('ROOT')     || define('ROOT', dirname($_SERVER['DOCUMENT_ROOT'] . $_SERVER['SCRIPT_NAME']) . '/');

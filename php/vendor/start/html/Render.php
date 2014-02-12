@@ -349,7 +349,7 @@ class Render {
     final function _plugin($ret){return $this->_module($ret);}
     final function _module($ret){
             if(!isset($ret['name'])) return '';
-            $module = '\\Lib\\Book\\Module\\'.ucfirst($ret['name']).'\\Main';
+            $module = '\\Module\\'.ucfirst($ret['name']).'\\Main';
             $module = new $module($ret);
             return $module->render();
     }
